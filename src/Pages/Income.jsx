@@ -1,4 +1,4 @@
-import IncomeSummary from "./components/income/IncomeSummary";
+import IncomeSummary from "../Components/income/IncomeSummary";
 
 export default function Income() {
   return (
