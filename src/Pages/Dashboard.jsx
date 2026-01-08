@@ -2,6 +2,8 @@ import StatCard from "../Components/StatCard";
 import taskStore from "../Store/taskStore";
 import clientStore from "../Store/clientStore";
 import incomeStore from "../Store/incomeStore";
+import IncomeChart from "../Components/income/IncomeChart";
+import TaskStatusChart from "../Components/tasks/TaskStatusChart";
 
 export default function Dashboard() {
   const { tasks } = taskStore();
@@ -20,6 +22,7 @@ export default function Dashboard() {
     <div className="space-y-6">
       <h1 className="text-2xl font-bold">Dashboard</h1>
 
+      {/* Stat Cards */}
       <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
         <StatCard title="Total Clients" value={clients.length} />
         <StatCard title="Total Tasks" value={tasks.length} />
@@ -31,6 +34,12 @@ export default function Dashboard() {
           title="Unpaid Tasks"
           value={unpaidTasks.length}
         />
+      </div>
+
+      {/* Charts Section */}
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
+        <IncomeChart />
+        <TaskStatusChart />
       </div>
     </div>
   );
