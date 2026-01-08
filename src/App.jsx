@@ -3,7 +3,7 @@ import MainLayout from "./layouts/MainLayout";
 import Dashboard from "./pages/Dashboard";
 import Clients from "./pages/Clients";
 import Tasks from "./pages/Tasks";
-import Income from "./pages/Income";
+import Income from "./Pages/Income";
 import Settings from "./pages/Settings";
 import Login from "./Pages/Login";
 import ProtectedRoute from "./Components/ProtectedRoute";
