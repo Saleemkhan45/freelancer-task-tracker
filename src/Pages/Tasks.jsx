@@ -1,3 +1,11 @@
+import TaskForm from ".././Components/tasks/TaskForm";
+import TaskTable from ".././Components/tasks/TaskTable";
+
 export default function Tasks() {
-  return <h1 className="text-2xl font-bold">Tasks</h1>;
+  return (
+    <div className="space-y-6">
+      <TaskForm />
+      <TaskTable />
+    </div>
+  );
 }
